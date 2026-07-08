@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo o DOM</title>
+    <style>
+        body {
+            background-color: rgb(81, 81, 255);
+            font-size: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo o DOM</h1>
+    <p>Estou aprendendo <strong>DOM</strong> em JavaScript</p>
+    <p>Eu gosto de JavaScript</p>
+    <div id="op">Clique aqui</div>
+    <div class="pt">Olá</div>
+
+    <script>
+        var p = document.getElementsByTagName('p')[0]
+        var elem1 = document.getElementById('op')
+        var elem2 = document.querySelector('div.pt')
+        p.innerText = 'OLá'
+        p.style.backgroundColor = 'red'
+        op.style.color = 'red'
+        elem2.style.backgroundColor = 'green'
+    </script>
+</body>
+</html>
