@@ -16,14 +16,31 @@
     </style>
 </head>
 <body>
-    <div>
+    <div onclick="clicar()" onmouseenter="entrar()" onmouseleave="sair()">
         <h1>Clique em mim</h1>
     </div>
 
 
     <script>
-        var botao = document.getElementsByTagName('div')
-        
+        var botao = document.getElementsByTagName('div')[0]
+
+        botao.addEventListener('click', clicar)
+        botao.addEventListener('mouseenter', entrar)
+        botao.addEventListener('mouseleave', sair)
+
+        function clicar(){
+            botao.innerText = 'Clicou'
+            botao.style.backgroundColor = 'blue'
+        }
+
+        function entrar(){
+            botao.innerText = 'Entrou'
+        }
+
+        function sair(){
+            botao.innerText = 'Saiu'
+            botao.style.backgroundColor = 'rgb(255, 104, 104)'
+        }
     </script>
 </body>
 </html>
