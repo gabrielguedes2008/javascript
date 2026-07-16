@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Verificador d País</h1>
+    Onde você mora <input type="text"  id="pais">
+    <input type="button" value="Enviar" onclick="verif()">
+    <p id="result"></p>
+
+    <script>
+        function verif() {
+            var pais = document.getElementById('pais').value
+            var result = document.getElementById('result')
+            result.innerHTML = `<p>Você mora no ${pais}</p>`
+            if (pais == 'brasil') {
+                result.innerHTML += '<p>Você é Brasileiro!!</p>'
+            } else {
+                result.innerHTML += '<p>Você é Estrangeiro!!</p>'
+            }
+        }
+    </script>
+</body>
+</html>

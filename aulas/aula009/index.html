@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de Trânsito</h1>
+    Digite sua Velocidade <input type="number" name="velocidade" id="vel">Km/h
+    <input type="button" value="Enviar" onclick="calc()">
+    <p id="result"></p>
+
+    <script>
+        function calc() {
+            var vel = document.getElementById('vel')
+            var result = document.getElementById('result')
+            vel = Number(vel.value)
+            result.innerHTML = `<p>Sua velocidade atual é de ${vel}Km/h</p>`
+            if (vel > 60) {
+                result.innerHTML += '<p>Você foi <strong>MULTADO</strong></p>'
+            } else {
+                result.innerHTML += '<p>Você não excedeu o limite de velocidade, <strong>VOCÊ NÃO FOI MULTADO</strong></p>'
+            }
+            result.innerHTML += '<p>Dirija sempre com os cintos de segurança</p>'
+        }
+    </script>
+</body>
+</html>
