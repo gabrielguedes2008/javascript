@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(252, 200, 104);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: auto;
+            margin-top: 120px;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 50px;
+            color: white;
+        }
+
+        #box {
+            background-color: white;
+            width: 900px;
+            height: 600px;
+            border-radius: 20px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.411);
+            text-align: center;
+            padding: 10px;
+            margin: auto;
+            font-size: 20px;
+            padding: 20px;
+        }
+
+        #box img {
+            margin-top: 50px;
+            width: 450px;
+            height: 450px;
+            border-radius: 100%;
+        }
+        
+    </style>
+</head>
+<body id="backgr">
+    <h1>Hora do Dia</h1>
+    <div id="box">
+        <h2 id="result"></h2>
+        <img src="" id="imagem">
+    </div>
+
+
+
+    <script>
+        var texto = document.getElementById('result')
+        var horaagora = new Date()
+        var hora = horaagora.getHours() 
+        var imagens = document.getElementById('imagem')
+        var backgr = document.getElementById('backgr')
+
+        if (hora >= 6 && hora < 12) {
+            texto.innerText = `Agora são ${hora.toFixed(2).replace('.', ':')} horas`
+            imagens.src = 'img/dia.jpg'
+            backgr.style.backgroundcolor = 'rgb(252, 200, 104)'
+        } else if (hora >= 12 && hora <= 18) {
+            texto.innerText = `Agora são ${hora.toFixed(2).replace('.', ':')} horas`
+            imagens.src = 'img/tarde.jpg'
+            backgr.style.backgroundColor = '#DB3C1A'
+        } else {
+            texto.innerText = `Agora são ${hora.toFixed(2).replace('.', ':')} horas`
+            imagens.src = 'img/noite.jpg'
+            backgr.style.backgroundColor = 'black'
+        }
+    </script>
+</body>
+</html>
