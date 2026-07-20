@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,13 +12,15 @@
     </header>
     <section>
         <p>Ano de Nascimento <input type="number" id="anoNas"></p>
-        <p>Sexo:</p>
-        <input type="button" value="Verificar" onclick="">
-        <img src="">
-        <p>Preencha os dados acima para ver o resultado!</p>
+        <p>Sexo: <input type="radio" name="sex" id="sexM"> Masculino <input type="radio" name="sex" id="sexF"> Feminino</p>
+        <input type="button" id="btnI" value="Verificar" onclick="verif()">
+        <p id="text">Preencha os dados acima para ver o resultado!</p>
+        <img src="" id="imagem">
     </section>
     <footer>
         <p>Feito por Gabriel G</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

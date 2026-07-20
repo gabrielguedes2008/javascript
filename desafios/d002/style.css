@@ -1,0 +1,47 @@
+
+body {
+    background-color: rgb(16, 148, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+
+section {
+    text-align: center;
+    background-color: white;
+    width: 550px;
+    padding: 10px;
+    font-size: 25px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+section p {
+    margin: 5px;
+}
+
+#btnI {
+    justify-content: left;
+    padding: 5px;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    margin-top: 15px;
+    border-radius: 100%;
+    display: none;
+}
+
+
+footer {
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
