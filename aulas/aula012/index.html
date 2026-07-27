@@ -11,8 +11,22 @@
     <div class="conteiner">
         <h1 class="title">Contador</h1>
         <div class="card">
-            <div>
-                <label for=""></label>
+            <div class="forms">
+                <p>
+                    Inicio:
+                    <input type="number" id="stI">
+                </p>
+                <p>
+                    Fim:
+                    <input type="number" id="enI">
+                </p>
+                <p>
+                    Passo:
+                    <input type="number" id="passI">
+                </p>
+                <input type="button" value="Contar" onclick="contar()">
+                <p id="title">Preparando a contagem...</p>
+                <p id="result"></p>
             </div>
         </div>
     </div>
