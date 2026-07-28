@@ -5,7 +5,10 @@ function contar() {
     var titulo = document.getElementById('title')
     var result = document.getElementById('result')
 
-    titulo.innerText = "Contando..."
+    if (inicio == 0 || fim == 0 ) {
+        window.alert("Impossivel de Contar!!")
+    } else {
+            titulo.innerText = "Contando..."
     if (inicio < fim )  
         if (passo == 0) {
             window.alert("PASSO NÂO PODE SER 0, PASSO 1")
@@ -33,6 +36,7 @@ function contar() {
             result.innerHTML += `${inicio}..    `
             inicio = inicio - passo
         }
+    }
     }
    
 }
