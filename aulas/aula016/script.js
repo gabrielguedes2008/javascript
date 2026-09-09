@@ -1,12 +1,10 @@
-let num = 2
 
-function calc(n) {
-    if (n % 2 == 0) {
+function ParImpar(num) {
+    if (num % 2 == 0) {
         return "PAR"
-    } else { 
+    } else {
         return "IMPAR"
     }
-
 }
 
-console.log(`O numero ${num} é ${calc(num)}`)
+console.log(`O Numero ${num} é ${ParImpar(1)}`)
