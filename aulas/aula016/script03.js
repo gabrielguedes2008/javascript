@@ -1,10 +1,8 @@
-function Fatorial(num, num2=num) {
-    let cont = num2
-    do  
-        let valor = num * num2
-        let total = total + valor
-        let cont = num2--
-    while(cont >= 0)
+function Fatorial(num) {
+    for(let c = num - 1 ; c > 1; c--) {
+        num = num * c 
+    }
+    return num
 }
 
-console.log(Fatorial(5))
+console.log(Fatorial(3))
